@@ -12,15 +12,14 @@
 # If win, quit the loop
 
 import random
-question = random.randint(1, 100)
 
+question = random.randint(1, 100)
 while True:
-    y = input("Please enter a number from 1 to 100: ")
-    if int(y) > question:
+    answer = input("Please enter a number from 1 to 100: ")
+    if int(answer) > question:
         print("Your number is too high.")
-    elif int(y) < question:
+    elif int(answer) < question:
         print("Your number is too low.")
-    elif int(y) == question:
+    elif int(answer) == question:
         print("You guessed the correct number!")
         break
-
